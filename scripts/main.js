@@ -1,3 +1,8 @@
+import entry from "./src/entry";
+
+export default entry;
+
+
 npm install scrollama intersection-observer --save
 
 import scrollama from "scrollama"; // or...
