@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Scrollama: Basic Example</title>
+	<meta name="description" content="Scrollama: Basic Example" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../docs/style.css" />
+
+
+	<style>
+		#scrolly {
+			position: relative;
+			background: #f5ac27;
+			padding: 1rem;
+		}
+
+		article {
+			position: relative;
+			padding: 0 1rem;
+			margin: 0 auto;
+			width: 33%;
+		}
+
+		.sticky-thing {
+			position: -webkit-sticky;
+			position: sticky;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			background-color:#3b3b3b;
+			z-index: 0;
+			top: 12.5vh;
+			height: 75vh;
+			/* Center everything inside */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.sticky-thing p {
+			font-size: 8rem;
+			font-weight: 900;
+			color:#fff;
+		}
+
+		.step {
+			margin: 2rem auto 4rem auto;
+			background-color: rgba(163,38,42,0.8);
+			color: #fff;
+			z-index: 0;
+		}
+
+		.step.is-active {
+			background-color: goldenrod;
+			color: #3b3b3b;
+		}
+
+		.step p {
+			text-align: center;
+			padding: 1rem;
+			font-size: 1.5rem;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div id="article" class="my_text">
+            <div id="titles" style="text-align: center;">
+            <h1>The Evolution of San Francisco's Chinese New Year Parade</h1>
+            <h2>Subheadliner</h2>
+            <h3>Marisabel Aguilar, Ari Crockett, Darya Daneshmand, and Kelsie Yu</h2>
+            </div>
+            <div id="photos" style="text-align: center;">
+                <img src="images/badge.JPG" style="width:350px">
+                <img src="images/costume.jpeg" style="width:350px">
+                <img src="images/dragon.JPG" style="width:350px">
+                <img src="images/girls.JPG" style="width:350px">
+                <img src="images/lanterns.JPG" style="width:350px">
+                <img src="images/lion_dance.JPG" style="width:350px">
+            </div>
+	</header>
+	<h1>The Evolution of San Francisco’s Chinese New Year Parade</h1>
+
+	<p>Rachel Lee remembered as a little girl boarding a downtown bus to Chinatown with her mother, father and brother to see the Chinese New Year Parade. Almost every year, she said they would set themselves up against the barricades with their blankets and snacks, and watch as the parade marched by. She recalled the excitement and energy of the parade, as well as being in awe of the “cool” lion dancers. But for many of her early years, Lee watched from the sidelines and never participated.</p>
+        <p>“I feel really sad that I never got that opportunity,” Lee said. “I've always been on the other side of the barricade, always wanting to be inside the barricade.”
+        <p>Having gotten her start when a high school friend invited her to participate in 2014, Lee is now a nine-year-long volunteer in San Francisco’s Chinese New Year Parade and was a section leader this year.</p>
+        <p>Reflecting on her first night volunteering, Lee said, “It was just so stimulating. But by the very end of the night, I was like ‘I could see myself doing this for a couple more years.’ And that's history.”</p>   
+        <p>San Francisco’s Chinese New Year Parade has been a yearly tradition of many for decades. The event started in 1953 when H.K. Wong, a popular businessman and community leader in San Francisco’s Chinatown, co-founded the parade to improve the public’s perception of Chinatown and its residents. The book “Mr. Chinatown: The Legacy of H.K. Wong,” which details H.K. Wong’s influence and contributions to Chinatown and San Francisco, mentioned how non-Chinese visitors originally saw Chinatown residents as enigmatic and exotic.</p> 
+        <p>The parade acted as a way for tourists or city residents to venture into Chinatown—a neighborhood previously perceived as inaccessible—and interact with Chinese culture in a positive way. Now, this citywide event draws people from every neighborhood and across the country to watch the parade, in person.</p>
+        <p>“Tons of people will fly out just to watch this parade because it's the largest parade you'll ever get for Lunar New Year [outside of Asia],” Lee said.</p>
+        <p>Harlan Wong, the current Chinese New Year Parade director, said, “Nothing beats watching the parade live. The excitement, the energy; it beats watching on television.”</p>
+	<main>
+		<section id="intro">
+			<h1 class="intro__hed">Timeline</h1>
+			<p class="intro__dek">
+				
+			</p>
+		</section>
+		<section id="scrolly">
+			<div class="sticky-thing">
+				<p>1</p>
+			</div>
+			<article>
+				<div class="step" data-step="1">
+					<p>1953: The Chinese New Year Festival and Golden Dragon Parade was co-founded by H.K. Wong with the goal of improving public perception of Chinatown and inviting non-Chinese tourists to experience Chinatown and its new year festival. </p>
+				</div>
+				<div class="step" data-step="2">
+					<p>1957: The festival parade garnered over 200,000 spectators, and efforts to publicize the event picked up with exposure through outlets like NBC, Bay Area television stations, European television networks and the Associated Press.
+					</p>
+				</div>
+				<div class="step" data-step="3">
+					<p>1958: The Chinese Chamber of Commerce officially took over the festival and parade. 
+					</p>
+				</div>
+				<div class="step" data-step="4">
+					<p>1978: The YMCA in San Francisco’s Chinatown kicked off the “Chinese New Year Run.” Friends and partners from across the globe are welcome to participate in a 10K, 5K or a walk.
+					</p>
+				</div>
+				<div class="step" data-step="5">
+					<p>1987: KTVU, a local TV broadcast became the first to live-stream the Lunar New Year Parade. This marked the start of large corporate sponsorships of the parade.
+					</p>
+				</div>
+				<div class="step" data-step="6">
+					<p>1992: As one of the larger events in the Chinese New Year Festival, the Chinatown Community Street Fair had over 120 booths and concessions as well as activities and entertainment for all ages. There was Chinese folk dancing, opera, drumming and more at the entertainment stage on Pacific Street.						
+					</p>
+				</div>
+				<div class="step" data-step="7">
+					<p>1993: The Flower Market Fair, an annual event on the weekend before Chinese New Year Day, started in 1993. Event goers could purchase fresh flowers, fruits, candies and supplies for the new lunar year. Over 120 booths and concessions could be found, as well as performances of traditional Chinese magicians, acrobats, folk dancers and opera.	
+					</p>
+				</div>
+				<div class="step" data-step="8">
+					<p>2019:
+						The San Francisco Chinese Chamber of Commerce helped start the annual tradition of Choy Suns gracing Chinatown and passing out thousands of “Lai Sees” with chocolate coins, money and gift certificates to children. Choy Sun, the god of wealth, is said to bless everyone he encounters with much prosperity and abundant wealth.
+					</p>
+				</div>
+				<div class="step" data-step="9">
+					<p>2021:
+						Due to the COVID-19 pandemic, the Lunar New Year Parade was canceled for the first time since its start. Instead, KTVU broadcasted a prerecorded parade showing for the year of the Ox in 2021. Harlen Wong introduced the Year of the Ox on Parade where zodiac statues are introduced throughout San Francisco promoting the upcoming Chinese zodiac.						
+					</p>
+				</div>
+
+					
+			</article>
+		</section>
+		<section id="outro"></section>
+
+		<p>Having participated in the street fairs around the parade since the ‘90s and becoming parade director in 2014—the same year Lee joined as a volunteer—Wong has seen the parade change in many ways. As parade director, he works toward fostering an atmosphere of inclusivity around the event. He hopes that—along with the marching bands, lion dances, and ornate floats—newer events such as the Chinatown Community Street Fair, Flower Market Fair and Choy Sun Doe will draw in young people and diverse communities in San Francisco.</p>
+        <p>Volunteers from all races and ethnicities are encouraged to join, and many have been inspired to do so thanks to a strong sense of community and solidarity. Lee remarked that many new volunteers in her section this year were spurned to get involved due to a want to combat the rise in AAPI hate following the initial COVID-19 pandemic.</p>
+        <p>Bayard Fong, the co-chair of the group We Are One that participated in this year’s parade, spoke about the solidarity he wishes to foster by including diverse groups of people in the parade.</p>
+        <p>“We need to open our doors and… get to know each other’s food, culture, music - and share it,” Fong said. “And we’ll find that we have so much in common.”</p>
+        <p>Assistance for the parade, not only from individual volunteers but also from the city at large, is necessary to make the parade possible. Wayne Hu, the former director of the Chinese New Year Parade for 24 years, highlights how the city supports the parade.
+        <p>“We need police, we need fire department, we need traffic control,” Hu said. “Without the city, we couldn’t do this parade.”</p>
+        <p>Wong said his goal for the future of the parade is to continue pushing for diversity and trying to “engage a wider audience.”</p>
+        <p>The Chinese New Year Parade has continuously evolved throughout the years with various events being added onto the festival. With these changes has come a growing emphasis on diversity. Lee said that she has seen an increase in diversity both inside and outside of the barricades.</p>
+        <p>Meanwhile, Hu emphasized the importance of “helping a community activity stay in the community,” alluding to the fact that many Chinatowns across the country are shrinking or experiencing a process of gentrification, where the character of a neighborhood undergoes change as the original inhabitants are pushed out. He hopes that young people will get involved and “keep the community alive” by participating in events like the parade.</p>
+        <p>Fong enthusiastically embraced the idea of diversity in the parade. His group, We Are One, hopes to set a precedent: the support shown to one group will be reciprocated by others.</p>
+        <p>“We're demonstrating that we are working together and we can celebrate the Year of the Rabbit together,” Fong said. “Then, next time it’s their culture, we're going to join them. We'll celebrate with them.”</p>
+        <p>In looking ahead to how the parade can continue their diversity efforts, Lee said the parade committee is considering changing the parade’s official name from ‘Chinese New Year Parade’ to ‘Lunar New Year Parade’ to encompass more Asian identities in the parade</p>
+        <p>“[For example], the Vietnamese don't celebrate the Year of the Rabbit this year,” Lee said. “It’s the Year of the Cat.”</p>
+        <p>Lee welcomed the possible name change to include people of various backgrounds. In fact, she said that changing the name may invite more Asian groups to participate in the parade itself.</p>
+        <p>“We’re opening doors for better opportunities,” Lee said.</p>
+        <p>The parade began with the hope of bringing in outside communities to watch Chinese performers in Chinatown. It has now evolved into a much larger event that engages the whole city, bringing people of various backgrounds to both perform in, as well as watch, the festivities.</p>
+        <p>Wong pushes for diversity; Hu highlights community; Fong hopes for solidary. Lee said all these and more: “The parade’s purpose hasn’t changed, it’s evolving.”</p>
+			
+		
+	</main>
+
+	<script src="../build/scrollama.js"></script>
+	<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+	<script>
+		var scrolly = document.querySelector("#scrolly");
+		var article = scrolly.querySelector("article");
+		var step = article.querySelectorAll(".step");
+
+		// initialize the scrollama
+		var scroller = scrollama();
+
+		// scrollama event handlers
+		function handleStepEnter(response) {
+			// response = { element, direction, index }
+			console.log(response);
+			// add to color to current step
+			response.element.classList.add("is-active");
+		}
+
+		function handleStepExit(response) {
+			// response = { element, direction, index }
+			console.log(response);
+			// remove color from current step
+			response.element.classList.remove("is-active");
+		}
+
+		function init() {
+			// set random padding for different step heights (not required)
+			step.forEach(function (step) {
+				var v = 100 + Math.floor((Math.random() * window.innerHeight) / 4);
+				step.style.padding = v + "px 0px";
+			});
+
+			// 1. setup the scroller with the bare-bones options
+			// 		this will also initialize trigger observations
+			// 2. bind scrollama event handlers (this can be chained like below)
+			scroller
+				.setup({
+					step: "#scrolly article .step",
+					debug: false,
+					offset: 0.5
+				})
+				.onStepEnter(handleStepEnter)
+				.onStepExit(handleStepExit);
+
+		}
+
+		// kick things off
+		init();
+	</script>
+</body>
+
+</html>
