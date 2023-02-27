@@ -23,6 +23,10 @@
     16 0, auto;
   }
 
+  htmll{font-size: 16px;}
+
+  p{font-size: calc(1rem + 1vw);
+  }
   .step {
 	width: 200%;
   }
@@ -112,6 +116,14 @@ h1 {
 	animation: octocat-wave 560ms ease-in-out;
   }
   
+  @media(max-width: 551px){
+	p {font-size: 12px;}
+  }
+
+  @media(min-width: 550px){
+	p {font-size: 16px;}
+  }
+
   @keyframes octocat-wave {
 	0%,
 	100% {
