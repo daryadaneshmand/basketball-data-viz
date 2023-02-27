@@ -23,12 +23,12 @@
     16 0, auto;
   }
 
-  htmll{font-size: 16px;}
+  html{font-size: 16px;}
 
   p{font-size: calc(1rem + 1vw);
   }
   .step {
-	width: 200%;
+	width: ;
   }
 
   /*
@@ -209,8 +209,8 @@ article {
 .step {
 	/*margin: 2rem auto 4rem auto;*/
 	min-width: 33vw;
-	margin: 2rem auto 4rem auto;
-	height: fit-content;
+	/*height: fit-content;*/
+	height: ;
 	background-color: rgba(163,38,42,0.8);
 	color: #fff;
 	z-index: 0;
@@ -223,7 +223,7 @@ article {
 
 .step p {
 	text-align: center;
-	padding: 1rem; 
-	font-size: 1.5rem;
+	/*padding: 1rem; */
+
 }
   
