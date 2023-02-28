@@ -7,9 +7,9 @@
   body {
 	margin: 0;
 	padding: 0;
-	background-color: white;
+	background-color: rgb(251, 208, 99);
 	text-align: justify;
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍭</text></svg>")
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧧</text></svg>")
     16 0, auto;
   }
   
@@ -18,8 +18,7 @@
 	font-family: "Montserrat";
 	min-height: 1280px;
 	font-size: 18px;
-	margin: 10vw 25vw;
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍭</text></svg>")
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧧</text></svg>")
     16 0, auto;
   }
 
@@ -74,7 +73,7 @@ h1 {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	background: #f5ac27;
+	background: #f4b031;
 	padding: 1rem;
 	padding-right: 5rem;
 	-ms-flex-wrap: wrap;
@@ -116,12 +115,22 @@ h1 {
 	animation: octocat-wave 560ms ease-in-out;
   }
   
+  /* mobile */
+
   @media(max-width: 551px){
 	p {font-size: 12px;}
+	body {
+		margin: 10vw 13vw;
+	}
   }
+
+/* desktop */
 
   @media(min-width: 550px){
 	p {font-size: 16px;}
+	body {
+		margin: 10vw 25vw;
+	}
   }
 
   @keyframes octocat-wave {
@@ -164,6 +173,13 @@ h1 {
 	  margin-top: 0;
 	  margin-left: 2rem;
 	}
+  }
+
+
+  .date {
+	font-size: larger;
+	text-align: center;
+	font-weight: bold;
   }
 
 
