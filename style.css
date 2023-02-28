@@ -118,7 +118,7 @@ h1 {
   /* mobile */
 
   @media(max-width: 551px){
-	p {font-size: 12px;}
+	p {font-size: 16px;}
 	body {
 		margin: 10vw 13vw;
 	}
@@ -127,7 +127,7 @@ h1 {
 /* desktop */
 
   @media(min-width: 550px){
-	p {font-size: 16px;}
+	p {font-size: 20px;}
 	body {
 		margin: 10vw 25vw;
 	}
