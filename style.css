@@ -161,11 +161,11 @@ h1 {
   }
   
   #intro {
-	margin-bottom: 320px;
+	margin-bottom: 20px;
   }
   
   #outro {
-	height: 640px;
+	height: 20px;
   }
   
   @media (min-width: 840px) {
