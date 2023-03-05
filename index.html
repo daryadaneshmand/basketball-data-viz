@@ -8,7 +8,7 @@
 	<meta name="description" content="Scrollama: Basic Example" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="style.css" />
-	<script src="scripts/main.js"></script>
+	<!-- <script src="scripts/main.js"></script> -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 
@@ -26,6 +26,35 @@
 			margin: 0 auto;
 			width: auto;
 		}
+
+		/* figure {
+			position: -webkit-sticky;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			background-color: #8a8a8a;
+			z-index: 0;
+		}
+
+		figure p {
+			text-align: center;
+			padding: 1rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			font-size: 8rem;
+			font-weight: 900;
+			color: #fff;
+		} */
+
+
 
 		.sticky-thing {
 			position: -webkit-sticky;
@@ -49,6 +78,8 @@
 			color:#fff;
 		}
 
+		/* NEW */
+
 		.step {
 			/*margin: 2rem auto 4rem auto;*/
             min-width: 33vw;
@@ -59,8 +90,12 @@
 			z-index: 0;
 		}
 
-		.step.is-active {
-			/* background-color: goldenrod; */
+		.step:last-child {
+			margin-bottom: 0;
+		}
+
+		.step.is-active p {
+			background-color: goldenrod; 
 			color: #ffffff;
 		}
 
@@ -183,43 +218,46 @@
 		<!--FIRST-->
 		<section id="scrolly">
 			<div class="sticky-thing">
-				<img src="images/dragon-01.svg" style="max-height:80vh">
+				<img class="chart" id="chart-img" src="" data-step="0">
 			</div>
-
+			
+			
+			
 			<article>
 				<div class="step" data-step="1" data-image="images/dragon-02.svg">
 					<p><span class="date">1953</span> <br>The Chinese New Year Festival and Golden Dragon Parade was co-founded by H.K. Wong with the goal of improving public perception of Chinatown and inviting non-Chinese tourists to experience Chinatown and its new year festival. </p>
 				</div>
+			
 				<div class="step" data-step="2" data-image="images/dragon-03.svg">
 					<p><span class="date">1957</span> <br> The festival parade garnered over 200,000 spectators, and efforts to publicize the event picked up with exposure through outlets like NBC, Bay Area television stations, European television networks and the Associated Press.
 					</p>
 				</div>
-				<div class="step" data-step="3">
+				<div class="step" data-step="3" data-image="images/dragon-04.svg">
 					<p><span class="date">1958</span> <br> The Chinese Chamber of Commerce officially took over the festival and parade. 
 					</p>
 				</div>
-				<div class="step" data-step="4">
+				<div class="step" data-step="4" data-image="images/dragon-05.svg">
 					<p><span class="date">1978</span> <br>The YMCA in San Francisco’s Chinatown kicked off the “Chinese New Year Run.” Friends and partners from across the globe are welcome to participate in a 10K, 5K or a walk.
 					</p>
 				</div>
-				<div class="step" data-step="5">
+				<div class="step" data-step="5" data-image="images/dragon-06.svg">
 					<p><span class="date">1987</span> <br>KTVU, a local TV broadcast became the first to live-stream the Lunar New Year Parade. This marked the start of large corporate sponsorships of the parade.
 					</p>
 				</div>
-				<div class="step" data-step="6">
+				<div class="step" data-step="6" data-image="images/dragon-07.svg">
 					<p><span class="date">1992</span> <br>As one of the larger events in the Chinese New Year Festival, the Chinatown Community Street Fair had over 120 booths and concessions as well as activities and entertainment for all ages. There was Chinese folk dancing, opera, drumming and more at the entertainment stage on Pacific Street.						
 					</p>
-				</div>
-				<div class="step" data-step="7">
+				</div>				
+				<div class="step" data-step="7" data-image="images/dragon-08.svg">
 					<p><span class="date">1993</span> <br>The Flower Market Fair, an annual event on the weekend before Chinese New Year Day, started in 1993. Event goers could purchase fresh flowers, fruits, candies and supplies for the new lunar year. Over 120 booths and concessions could be found, as well as performances of traditional Chinese magicians, acrobats, folk dancers and opera.	
 					</p>
 				</div>
-				<div class="step" data-step="8">
+				<div class="step" data-step="8" data-image="images/dragon-09.svg">
 					<p><span class="date">2019</span> <br>
 						The San Francisco Chinese Chamber of Commerce helped start the annual tradition of Choy Suns gracing Chinatown and passing out thousands of “Lai Sees” with chocolate coins, money and gift certificates to children. Choy Sun, the god of wealth, is said to bless everyone he encounters with much prosperity and abundant wealth.
 					</p>
 				</div>
-				<div class="step" data-step="9">
+				<div class="step" data-step="9" data-image="images/dragon-10.svg">
 					<p><span class="date">2021</span> <br>
 						Due to the COVID-19 pandemic, the Lunar New Year Parade was canceled for the first time since its start. Instead, KTVU broadcasted a prerecorded parade showing for the year of the Ox in 2021. Harlen Wong introduced the Year of the Ox on Parade where zodiac statues are introduced throughout San Francisco promoting the upcoming Chinese zodiac.						
 					</p>
@@ -256,62 +294,74 @@
 
 	<script src="build/scrollama.js"></script>
     <script src="build/scrollama.min.js"></script>
-    <!--<script src="d3.v4.min.js"></script> -->
+    <script src="d3.v4.min.js"></script> 
 
 
 	<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
 	<script>
-		var scrolly = document.querySelector("#scrolly");
-		var article = scrolly.querySelector("article");
-		var step = article.querySelectorAll(".step");
+		// using d3 for convenience
+		var main = d3.select("main");
+		var scrolly = main.select("#scrolly");
+		var figure = scrolly.select("figure");
+		var article = scrolly.select("article");
+		var step = article.selectAll(".step");
 
-		// initialize the scrollama
 		var scroller = scrollama();
 
-		const image = document.querySelector('#scrolly img');
 
-		// scrollama event handlers
+
+		// generic window resize listener event
+		function handleResize() {
+			// 1. update height of step elements
+			var stepH = Math.floor(window.innerHeight * 0.75);
+			step.style("height", stepH + "px");
+
+			var figureHeight = window.innerHeight / 2;
+			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+			figure
+				.style("height", figureHeight + "px")
+				.style("top", figureMarginTop + "px");
+
+			// 3. tell scrollama to update new element dimensions
+			scroller.resize();
+		}
+
 		function handleStepEnter(response) {
-			// response = { element, direction, index }
-
-			var el = response.element;
-			console.log(el);
-
-			//remove is-active from all steps
-			// then add is-active to this step
-			steps.forEach(step => step.classList.remove('is-active'));
-			el.classList.add('is-active');
-
-			// add to color to current step
-			sticky.querySelector("scrolly img").innerText = el.dataset.image;
-		}
-
-		function handleStepExit(response) {
-			// response = { element, direction, index }
 			console.log(response);
-			// remove color from current step
-			response.element.classList.remove("is-active");
-		}
+			// response = { element, direction, index }
 
-		function init() {
-			// set random padding for different step heights (not required)
-			step.forEach(function (step) {
-				var v = 100 + Math.floor((Math.random() * window.innerHeight) / 4);
-				step.style.padding = v + "px 0px";
+			// add color to current step only
+			step.classed("is-active", function (d, i) {
+				return i === response.index;
 			});
 
-			// 1. setup the scroller with the bare-bones options
+			// update graphic based on step
+			figure.select("p").text(response.index + 1);
+
+			// Get the data-image attribute of the current step
+  			var imgPath = response.element.getAttribute("data-image");
+  
+  			// Set the src attribute of the chart image to the current step's image
+  			document.getElementById("chart-img").setAttribute("src", imgPath);
+		}
+
+
+		function init() {
+
+			// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+			handleResize();
+
+			// 2. setup the scroller passing options
 			// 		this will also initialize trigger observations
-			// 2. bind scrollama event handlers (this can be chained like below)
+			// 3. bind scrollama event handlers (this can be chained like below)
 			scroller
 				.setup({
 					step: "#scrolly article .step",
-					debug: false,
-					offset: 0.5 //change to impact where the trigger is on page
+					offset: 0.5,
+					debug: false
 				})
-				.onStepEnter(handleStepEnter)
-				.onStepExit(handleStepExit);
-
+				.onStepEnter(handleStepEnter);
 		}
 
 		// kick things off
