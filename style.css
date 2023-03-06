@@ -132,6 +132,12 @@ h1 {
 	body {
 		margin: 10vw 13vw;
 	}
+	.dot{
+		margin-top: 40px;
+	}
+	.text{
+		bottom: 30px;
+	}
   }
 
 /* desktop */
@@ -140,6 +146,12 @@ h1 {
 	p {font-size: 20px;}
 	body {
 		margin: 10vw 25vw;
+	}
+	.dot{
+		margin-top: 2rem;
+	}
+	.text{
+		bottom: 30px;
 	}
   }
 
@@ -218,7 +230,6 @@ h1 {
   	font-size: 15px;
   	padding: -30px 14px;
   	position: absolute;
-  	bottom: 30px;
   	width: 100%;
   	text-align: center;
 	}
@@ -236,8 +247,7 @@ h1 {
 	.dot {
   	height: 15px;
   	width: 15px;
-  	margin: 0 2px;
-	margin-top: 25px;
+  	/* margin: 0 2px; */
   	background-color: #bbb;
   	border-radius: 50%;
   	display: inline-block;
