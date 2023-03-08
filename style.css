@@ -1,3 +1,9 @@
+/*NBA hex codes
+#1D418A blue
+#C70F2D red
+#fff white
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 * {
 	box-sizing: border-box;
@@ -9,8 +15,6 @@
 	padding: 0;
 	background-color: #fbf5f5;
 	text-align: left;
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧧</text></svg>")
-    16 0, auto;
   }
   
   
@@ -18,8 +22,6 @@
 	font-family: 'Roboto', sans-serif;
 	min-height: 1280px;
 	font-size: 18px;
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧧</text></svg>")
-    16 0, auto;
 	color: rgb(0, 0, 0);
   }
 
@@ -66,38 +68,7 @@ h1 {
   }
   
   
-  nav {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: baseline;
-	-ms-flex-align: baseline;
-	align-items: baseline;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	background: #f4b031;
-	padding: 1rem;
-	padding-right: 5rem;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-  }
-  
-  .nav__examples {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: baseline;
-	-ms-flex-align: baseline;
-	align-items: baseline;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-top: 1rem;
-  }
-  
-  .nav__examples > * {
-	margin-right: 0.5rem;
-  }
+
   
   #intro {
 	max-width: 40rem;
@@ -303,5 +274,5 @@ h1 {
 	  
 
 
-
+/* DATA VIZ */
 
